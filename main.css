@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.card .card-container {
+    position: relative;
+    margin-top: 200px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    box-shadow: hsl(213, 21%, 17%) 0px 5px 10px;
+}
+
+.card-container .advicenum {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 30px;
+    margin-bottom: 10px;
+    color: hsl(150, 100%, 66%);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.card-container .advicenum span {
+    margin-left: 10px;
+}
+
+.adviceQuote {
+    font-size: 28px;
+    width: 460px;
+    margin: 20px auto;
+    margin-bottom: 25px;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+}
+
+.driver2 {
+    display: none;
+}
+
+.dicebtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    bottom: -30px;
+    left: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dicebtn:hover {
+    box-shadow: hsla(150, 100%, 66%, 0.542) 0px 5px 15px;
+    box-shadow: hsla(150, 100%, 66%, 0.542) 0px 8px 24px, hsla(150, 100%, 66%, 0.542) 0px 8px 24px, hsla(150, 100%, 66%, 0.542) 0px 8px 24px, hsla(150, 100%, 66%, 0.542) 0px 8px 24px;
+}
+
+.dicebtn img {}
+
+@media (max-width:768px) {
+    body {
+        width: 375px;
+    }
+
+    .card .card-container {
+        margin-top: 200px;
+        width: 360px;
+        height: 300px;
+    }
+
+    .adviceQuote {
+        font-size: 28px;
+        width: 350px;
+        margin: 20px auto;
+        margin-bottom: 25px;
+    }
+
+    .driver1 {
+        display: none;
+    }
+
+    .driver2 {
+        display: block;
+        margin-left: 35px;
+    }
+
+}
